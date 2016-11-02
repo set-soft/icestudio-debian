@@ -1,0 +1,18 @@
+Source: icestudio
+Section: electronics
+Priority: optional
+Maintainer: SET <set@ieee.org>
+Build-Depends: debhelper (>= 9),
+               wine,
+               nodejs
+Homepage: https://github.com/FPGAwars/icestudio
+Standards-Version: 3.9.5
+
+Package: icestudio
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, apio, apio-examples, apio-icestorm, apio-scons, apio-iverilog, apio-system
+Description: Experimental graphic editor for open FPGAs.
+ icestudio is a tool to design circuits using graphics and verilog.
+ Built on top of the icestorm project (iCE40 FPGAs).
+
+
