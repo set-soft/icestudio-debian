@@ -1,3 +1,9 @@
+icestudio (0.2.1-2) stable; urgency=medium
+
+  * Improve toolchain menu behavior.
+
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Wed, 02 Nov 2016 11:00:56 -0300
+
 icestudio (0.2.1-1) stable; urgency=medium
 
   * Initial release.
