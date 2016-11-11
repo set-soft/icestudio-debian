@@ -15,6 +15,9 @@ node_modules:
 dist: app node_modules
 	npm run dist
 
+deb:
+	fakeroot dpkg-buildpackage -b -uc
+
 install: dist
 	install -m 0755 -d $(DESTDIR)$(INST_DIR)
 	cp -r dist/icestudio/linux64/* $(DESTDIR)$(INST_DIR)
