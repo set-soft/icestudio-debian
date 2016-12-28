@@ -18,9 +18,20 @@ dist: app node_modules
 deb:
 	fakeroot dpkg-buildpackage -b -uc
 
+clean:
+	-@rm .tcedit.dst
+
+clean-all:
+	-@rm debian/.tcedit.dst
+	fakeroot debian/rules clean
+
 install: dist
 	install -m 0755 -d $(DESTDIR)$(INST_DIR)
+	# Temporaly move the toolchain out
+	#mv dist/icestudio/linux64/toolchain/ dist/icestudio/
 	cp -r dist/icestudio/linux64/* $(DESTDIR)$(INST_DIR)
+	# Restore the toolchain
+	#mv dist/icestudio/toolchain/ dist/icestudio/linux64/
 	chmod -x $(DESTDIR)$(INST_DIR)/locales/*.pak $(DESTDIR)$(INST_DIR)/*.pak $(DESTDIR)$(INST_DIR)/*.dat
 	install -m 0755 -d $(DESTDIR)/usr/bin/
 	ln -s $(INST_DIR)/icestudio $(DESTDIR)/usr/bin/icestudio
