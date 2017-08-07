@@ -1,0 +1,24 @@
+--- a/app/scripts/services/collections.js
++++ b/app/scripts/services/collections.js
+@@ -20,9 +20,18 @@
+       var defaultCollection = getCollection(defaultData);
+       common.collections.push(defaultCollection);
+       // Add installed collections
+-      var data = utils.getFilesRecursive(common.COLLECTIONS_DIR);
+-      for (var i in data) {
+-        var collection = getCollection(data[i]);
++      var data = utils.getFilesRecursive('/usr/share/icestudio/collections');
++      var i;
++      var collection;
++      for (i in data) {
++        collection = getCollection(data[i]);
++        if (collection) {
++          common.collections.push(collection);
++        }
++      }
++      data = utils.getFilesRecursive(common.COLLECTIONS_DIR);
++      for (i in data) {
++        collection = getCollection(data[i]);
+         if (collection) {
+           common.collections.push(collection);
+         }

@@ -23,15 +23,18 @@ clean:
 
 clean-all:
 	-@rm debian/.tcedit.dst
+	-@rm -rf dist/
 	fakeroot debian/rules clean
 
 install: dist
 	install -m 0755 -d $(DESTDIR)$(INST_DIR)
 	# Temporaly move the toolchain out
 	#mv dist/icestudio/linux64/toolchain/ dist/icestudio/
+	mv dist/icestudio/linux64/resources/virtualenv/ dist/icestudio/
 	cp -r dist/icestudio/linux64/* $(DESTDIR)$(INST_DIR)
 	# Restore the toolchain
 	#mv dist/icestudio/toolchain/ dist/icestudio/linux64/
+	mv dist/icestudio/virtualenv/ dist/icestudio/linux64/resources/
 	chmod -x $(DESTDIR)$(INST_DIR)/locales/*.pak $(DESTDIR)$(INST_DIR)/*.pak $(DESTDIR)$(INST_DIR)/*.dat
 	install -m 0755 -d $(DESTDIR)/usr/bin/
 	ln -s $(INST_DIR)/icestudio $(DESTDIR)/usr/bin/icestudio

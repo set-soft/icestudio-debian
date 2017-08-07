@@ -1,3 +1,15 @@
+icestudio (0.3.1+20170804gitcbd0268-1) stable; urgency=medium
+
+  * New upstream version
+
+ -- Salvador Eduardo Tropea <salvador@inti.gov.ar>  Fri, 04 Aug 2017 09:09:47 -0300
+
+icestudio (0.3.0-beta-1) stable; urgency=medium
+
+  * New upstream release
+
+ -- Salvador Eduardo Tropea <salvador@inti.gov.ar>  Wed, 28 Dec 2016 10:31:47 -0300
+
 icestudio (0.3.0-dev-1) stable; urgency=medium
 
   * New upstream release

@@ -1,0 +1,23 @@
+--- a/gruntfile.js
++++ b/gruntfile.js
+@@ -13,10 +13,9 @@
+     distCommands = ['compress:osx32', 'compress:osx64', 'appdmg'];
+   }
+   else {
+-    platforms = ['linux32', 'linux64', 'win32', 'win64'];
++    platforms = ['linux64'];
+     options = { scope: ['devDependencies'] };
+-    distCommands = ['compress:linux32', 'compress:linux64', 'appimage:linux32', 'appimage:linux64',
+-                    'compress:win32', 'compress:win64', 'wget:python32', 'wget:python64', 'exec:nsis32', 'exec:nsis64'];
++    distCommands = [];
+   }
+ 
+   function all(dir) {
+@@ -429,7 +428,6 @@
+     'cssmin',
+     'usemin',
+     'nwjs',
+-    'toolchain'
+   ]
+   .concat(distCommands)
+   .concat([
