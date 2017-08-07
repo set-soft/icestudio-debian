@@ -1,0 +1,15 @@
+Source: icestudio-coll-makespace
+Section: electronics
+Priority: optional
+Maintainer: SET <set@ieee.org>
+Build-Depends: debhelper (>= 9)
+Homepage: https://github.com/FPGAwars/workshops/wiki/2017_07_08:-Makespace-Madrid#instalaci%C3%B3n-2-colecci%C3%B3n-makespace-17
+Standards-Version: 3.9.5
+
+Package: icestudio-coll-makespace
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, icestudio
+Description: MakeSpace blocks collection for icestudio
+ This package contains Obijuan's makespace collection of blocks for icestudio
+
+
