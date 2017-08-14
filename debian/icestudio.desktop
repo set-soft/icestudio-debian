@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=icestudio
+GenericName=Electrical engineering tool
+GenericName[es]=Herramienta para la ingeniería electrónica
+Comment=Experimental graphic editor for open FPGAs
+Comment[es]=Editor gráfico experimental para FPGAs libres
+TryExec=icestudio
+Exec=icestudio
+Icon=icestudio-logo.svg
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Science;Education;Electronics;
+MimeType=application/icestudio;

@@ -1,0 +1,4 @@
+dist/icestudio/linux64/resources/images/icestudio-logo.png /usr/share/pixmaps
+dist/icestudio/linux64/resources/images/icestudio-logo.svg /usr/share/pixmaps
+debian/icestudio.desktop /usr/share/applications
+debian/icestudio.xml /usr/share/mime/packages
