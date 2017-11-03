@@ -1,3 +1,15 @@
+icestudio (0.3.1-1) stable; urgency=medium
+
+  * New upstream version
+
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Fri, 03 Nov 2017 10:52:35 -0300
+
+icestudio (0.3.1+20171102git44e3668-1) stable; urgency=medium
+
+  * New upstream version
+
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Thu, 02 Nov 2017 15:00:53 -0300
+
 icestudio (0.3.1+20170804gitcbd0268-2) stable; urgency=medium
 
   * Added menu entry and mime type.
