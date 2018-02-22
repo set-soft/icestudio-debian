@@ -1,11 +1,11 @@
 --- a/app/package.json
 +++ b/app/package.json
-@@ -20,7 +20,7 @@
-   "apio": {
-     "min": "0.2.4",
-     "max": "0.2.5",
--    "external": ""
-+    "external": "/usr/bin/apio"
+@@ -24,7 +24,7 @@
+       "blackiceprog",
+       "tinyfpgab"
+     ],
+-    "external": "",
++    "external": "/usr/bin/apio",
+     "develop": false
    },
-   "engines": {
-     "node": ">= 0.10.0"
+   "collection": "0.3.0",

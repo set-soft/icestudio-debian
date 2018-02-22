@@ -1,3 +1,14 @@
+icestudio (0.3.2~beta1-1) stable; urgency=medium
+
+  * New upstream version
+  * BlackIce and TinyFPGA support
+  * Drag & replace
+  * Information blocks enhancements
+  * FFs/LUTs usage
+  * New SVG pinouts
+
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Thu, 22 Feb 2018 07:59:20 -0300
+
 icestudio (0.3.1-1) stable; urgency=medium
 
   * New upstream version

@@ -13,7 +13,7 @@
    }
  
    function all(dir) {
-@@ -429,7 +428,6 @@
+@@ -430,7 +429,6 @@
      'cssmin',
      'usemin',
      'nwjs',
