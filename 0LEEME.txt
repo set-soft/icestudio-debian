@@ -1,0 +1,30 @@
+Este es un machete para no olvidarme de algunas cosas.
+
+Para hacer una release:
+
+* Actualizar el repo y usar el código de la release:
+$ git pull
+$ git checkout TAG
+
+* Cambiar la versión Debian:
+$ dch -v VERSION
+Para las betas usar VERSION~betaN-X
+
+* Probar los parches
+$ quilt push -a
+Si aplicaron bien quitarlos
+$ quilt pop -a
+Si alguno necesita refrescarse
+$ quilt refresh
+
+* Probar la aplicación
+$ quilt push -a
+$ rm -r node_modules
+$ make run
+$ quilt pop -a
+
+* Empaquetar
+$ make deb
+
+
+

@@ -1,3 +1,14 @@
+icestudio (0.3.2-1) stable; urgency=medium
+
+  * New upstream version
+  * Fix "profile not found" message
+  * Improve tmp build_dir management
+  * Improve blocks edition alerts
+  * Center replaced blocks
+  * Fix undo/redo bug with ace-builds v1.2.9
+
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Tue, 12 Jun 2018 12:51:49 -0300
+
 icestudio (0.3.2~beta1-1) stable; urgency=medium
 
   * New upstream version
