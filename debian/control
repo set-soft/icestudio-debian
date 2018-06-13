@@ -10,7 +10,7 @@ Standards-Version: 3.9.5
 
 Package: icestudio
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, apio, apio-examples, apio-icestorm, apio-scons, apio-iverilog, apio-system
+Depends: ${shlibs:Depends}, ${misc:Depends}, apio (>= 0.3.3), apio-examples, apio-icestorm, apio-scons, apio-iverilog, apio-system
 Recommends: xclip
 Description: Experimental graphic editor for open FPGAs.
  icestudio is a tool to design circuits using graphics and verilog.
