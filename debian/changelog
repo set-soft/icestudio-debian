@@ -1,3 +1,25 @@
+icestudio (0.3.3~beta1-1) stable; urgency=medium
+
+  * New upstream version
+  * Support Alhambra II
+  * New file format v1.2
+  * Memory blocks
+  * Improve Info block
+  * Improve block connectors
+  * Add Collections > Reload function
+  * Rotate constant port labels
+  * Wires avoid port labels :D
+  * Allow any character for I/O/Constant/Memory block names
+  * Improve findBlockInArea function
+  * Disable events in ports
+  * Blocks style
+  * Allow empty names: optimize size
+  * Increase blocks interactive border
+  * Refactor header for I/O/Constant/Memory blocks
+  * Improve blocks replacement
+
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Tue, 12 Jun 2018 13:18:36 -0300
+
 icestudio (0.3.2-1) stable; urgency=medium
 
   * New upstream version
